@@ -6,7 +6,10 @@ steps:
   image: alpine
   environment:
     USERNAME:
-      from_secret: org_secret_1
-    PASSWORD:
-      from_secret: org_secret_pw
-      
+      from_secret: username
+
+---
+kind: secret
+name: username
+data: S0uE6S67/+Z1KAyshtJCHAUu4d0g2qaeOaKGVsq0H6F0DDpVmnvdMeY=
+
